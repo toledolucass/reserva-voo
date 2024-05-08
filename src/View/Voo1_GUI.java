@@ -24,12 +24,12 @@ public class Voo1_GUI extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         numAssento_txt = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        assento1_txt = new javax.swing.JLabel();
-        assento2_txt = new javax.swing.JLabel();
-        assento3_txt = new javax.swing.JLabel();
-        assento4_txt = new javax.swing.JLabel();
-        assento5_txt = new javax.swing.JLabel();
-        assento6_txt = new javax.swing.JLabel();
+        assento1_1_txt = new javax.swing.JLabel();
+        assento1_2_txt = new javax.swing.JLabel();
+        assento1_3_txt = new javax.swing.JLabel();
+        assento1_4_txt = new javax.swing.JLabel();
+        assento1_5_txt = new javax.swing.JLabel();
+        assento1_6_txt = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -94,35 +94,35 @@ public class Voo1_GUI extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(20, 280, 50, 40);
 
-        assento1_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        assento1_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(assento1_txt);
-        assento1_txt.setBounds(170, 130, 60, 30);
+        assento1_1_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        assento1_1_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento1_1_txt);
+        assento1_1_txt.setBounds(170, 130, 60, 30);
 
-        assento2_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        assento2_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(assento2_txt);
-        assento2_txt.setBounds(290, 130, 80, 30);
+        assento1_2_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        assento1_2_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento1_2_txt);
+        assento1_2_txt.setBounds(290, 130, 80, 30);
 
-        assento3_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        assento3_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(assento3_txt);
-        assento3_txt.setBounds(170, 170, 60, 30);
+        assento1_3_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        assento1_3_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento1_3_txt);
+        assento1_3_txt.setBounds(170, 170, 60, 30);
 
-        assento4_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        assento4_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(assento4_txt);
-        assento4_txt.setBounds(310, 170, 40, 30);
+        assento1_4_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        assento1_4_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento1_4_txt);
+        assento1_4_txt.setBounds(310, 170, 40, 30);
 
-        assento5_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        assento5_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(assento5_txt);
-        assento5_txt.setBounds(170, 210, 60, 30);
+        assento1_5_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        assento1_5_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento1_5_txt);
+        assento1_5_txt.setBounds(170, 210, 60, 30);
 
-        assento6_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        assento6_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(assento6_txt);
-        assento6_txt.setBounds(310, 210, 40, 30);
+        assento1_6_txt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        assento1_6_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento1_6_txt);
+        assento1_6_txt.setBounds(310, 210, 40, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,7 +145,7 @@ public class Voo1_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void numAssento_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numAssento_txtActionPerformed
-        Model.Funcoes_DAO.reservar();
+        Model.Funcoes_DAO.reservarVoo1();
     }//GEN-LAST:event_numAssento_txtActionPerformed
 
     /**
@@ -162,12 +162,12 @@ public class Voo1_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JLabel assento1_txt;
-    public static javax.swing.JLabel assento2_txt;
-    public static javax.swing.JLabel assento3_txt;
-    public static javax.swing.JLabel assento4_txt;
-    public static javax.swing.JLabel assento5_txt;
-    public static javax.swing.JLabel assento6_txt;
+    public static javax.swing.JLabel assento1_1_txt;
+    public static javax.swing.JLabel assento1_2_txt;
+    public static javax.swing.JLabel assento1_3_txt;
+    public static javax.swing.JLabel assento1_4_txt;
+    public static javax.swing.JLabel assento1_5_txt;
+    public static javax.swing.JLabel assento1_6_txt;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

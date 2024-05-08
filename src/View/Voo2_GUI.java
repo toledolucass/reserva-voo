@@ -22,8 +22,14 @@ public class Voo2_GUI extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        assento2_txt = new javax.swing.JTextField();
+        numAssento2_txt = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        assento2_1_txt = new javax.swing.JLabel();
+        assento2_2_txt = new javax.swing.JLabel();
+        assento2_3_txt = new javax.swing.JLabel();
+        assento2_4_txt = new javax.swing.JLabel();
+        assento2_5_txt = new javax.swing.JLabel();
+        assento2_6_txt = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -69,13 +75,13 @@ public class Voo2_GUI extends javax.swing.JFrame {
         jPanel1.add(jLabel7);
         jLabel7.setBounds(320, 260, 190, 20);
 
-        assento2_txt.addActionListener(new java.awt.event.ActionListener() {
+        numAssento2_txt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                assento2_txtActionPerformed(evt);
+                numAssento2_txtActionPerformed(evt);
             }
         });
-        jPanel1.add(assento2_txt);
-        assento2_txt.setBounds(320, 290, 180, 20);
+        jPanel1.add(numAssento2_txt);
+        numAssento2_txt.setBounds(320, 290, 180, 20);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/voltar.png"))); // NOI18N
         jButton1.setBorderPainted(false);
@@ -87,6 +93,30 @@ public class Voo2_GUI extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1);
         jButton1.setBounds(20, 280, 50, 40);
+
+        assento2_1_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento2_1_txt);
+        assento2_1_txt.setBounds(170, 130, 60, 30);
+
+        assento2_2_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento2_2_txt);
+        assento2_2_txt.setBounds(300, 130, 60, 30);
+
+        assento2_3_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento2_3_txt);
+        assento2_3_txt.setBounds(170, 170, 60, 30);
+
+        assento2_4_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento2_4_txt);
+        assento2_4_txt.setBounds(300, 170, 60, 30);
+
+        assento2_5_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento2_5_txt);
+        assento2_5_txt.setBounds(170, 210, 60, 30);
+
+        assento2_6_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(assento2_6_txt);
+        assento2_6_txt.setBounds(300, 210, 60, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -108,9 +138,9 @@ public class Voo2_GUI extends javax.swing.JFrame {
         new Tela_GUI().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void assento2_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assento2_txtActionPerformed
-        Model.Funcoes_DAO.reservar();
-    }//GEN-LAST:event_assento2_txtActionPerformed
+    private void numAssento2_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numAssento2_txtActionPerformed
+        Model.Funcoes_DAO.reservarVoo2();
+    }//GEN-LAST:event_numAssento2_txtActionPerformed
 
 
     public static void main(String args[]) {
@@ -123,7 +153,12 @@ public class Voo2_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JTextField assento2_txt;
+    public static javax.swing.JLabel assento2_1_txt;
+    public static javax.swing.JLabel assento2_2_txt;
+    public static javax.swing.JLabel assento2_3_txt;
+    public static javax.swing.JLabel assento2_4_txt;
+    public static javax.swing.JLabel assento2_5_txt;
+    public static javax.swing.JLabel assento2_6_txt;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -133,5 +168,6 @@ public class Voo2_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    public static javax.swing.JTextField numAssento2_txt;
     // End of variables declaration//GEN-END:variables
 }
